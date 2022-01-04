@@ -28,6 +28,9 @@ Stuff to configure Raspberry PI to talk to the Eel.
     ```
 1. SSH into the PI: `ssh eellink`.
 1. Update packages: `sudo apt update` and `sudo apt upgrade`.
+1. Set hostname:
+    1. Edit this file: `sudo nano /etc/hostname`.
+    1. Update any occurrences in this file: `sudo nano /etc/hosts`
 1. Change sudo timeout to 30 minutes:
     1. `sudo visudo`
     1. Add this line: `Defaults        timestamp_timeout=30`.
